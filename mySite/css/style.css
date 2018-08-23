@@ -1,0 +1,29 @@
+/* #pambo{
+    color: red;
+    background-color: blueviolet;
+}
+#head2{
+font-size: 55px;
+
+} */
+
+.coolguy{
+    border: 1px solid red;
+}
+.rughguy{
+    color: blue;
+}
+.bluediv{
+    background-image: url("../images/back.jpeg");
+    /* margin:0 auto; */
+    padding-top:100px;
+    /* position: st; */
+    border:1px solid black;
+    height: 100px;
+    width:50px;
+}
+.reddiv{
+    background-color: red;
+    height: 100px;
+    width:50px;
+}
