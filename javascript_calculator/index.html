@@ -17,6 +17,7 @@
     <label id="result">result</label>
 <script>
 function add(){
+    clearBody();
     //alert("yes teacher it is working");
     var firstNumber=document.getElementById("firstNumbertext").value;
     var secondNumber=document.getElementById("secondNumbertext").value;
@@ -28,6 +29,7 @@ function add(){
 
 }
 function min(){
+    clearBody();
     //alert("yes teacher it is working");
     var firstNumber=document.getElementById("firstNumbertext").value;
     var secondNumber=document.getElementById("secondNumbertext").value;
@@ -39,34 +41,41 @@ function min(){
 
 }
 function mul(){
+    clearBody();
     //alert("yes teacher it is working");
     var firstNumber=document.getElementById("firstNumbertext").value;
     var secondNumber=document.getElementById("secondNumbertext").value;
     var addNumber=parseFloat( firstNumber) * parseFloat(  secondNumber);
     document.getElementById("result").innerHTML=addNumber;
     //alert(addNumber);
+if(addNumber>5000){
+    document.getElementsByTagName("body")[0].setAttribute("style","background-color:red;")
+}
 
 
 
 }
 function div(){
+    clearBody();
     //alert("yes teacher it is working");
     var firstNumber=document.getElementById("firstNumbertext").value;
     var secondNumber=document.getElementById("secondNumbertext").value;
 if(parseFloat(  secondNumber)==0){
-    document.getElementById("result").innerHTML="Hey Smarty, you can not divide on Zero.";
+    document.getElementById("result").innerHTML="Hey Smarty, you can not divid on Zero.";
 }else{
-    var addNumber=parseFloat( firstNumber) / parseFloat(  secondNumber);
+    var addNumber=parseFloat(firstNumber) / parseFloat(  secondNumber);
     document.getElementById("result").innerHTML=addNumber;
 }
 
     
-    //alert(addNumber);
-
-
 
 }
+function clearBody(){
+    document.getElementsByTagName("body")[0].setAttribute("style","");
 
+
+    
+}
 </script>
 
 </body>
