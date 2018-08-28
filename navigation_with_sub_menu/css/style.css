@@ -80,9 +80,19 @@ width:50%;
 .subnav-content{
     background-color: beige;
     visibility: hidden;
+    min-width: 100px;
 }
 .nav>li:hover .subnav-content{
     visibility: visible;
+}
+.subnav-content>a{
+    text-decoration: none;
+    display:block;
+    padding: 5px;
+}
+.subnav-content>a:hover{
+    background-color: blue;
+    color:red;
 }
 
 @media  screen and (max-width:350px){
