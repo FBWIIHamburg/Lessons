@@ -10,7 +10,10 @@
 <body>
     <input type="number" id="firstNumbertext" placeholder="Enter the first Number" />
     <input type="number" id="secondNumbertext" placeholder="Enter the second Number" />
-    <button onclick="add()">+</button>
+    <button onclick="add()" >+</button>
+    <button onclick="min()" >-</button>
+    <button onclick="mul()" >*</button>
+    <button onclick="div()" >/</button>
     <label id="result">result</label>
 <script>
 function add(){
@@ -19,7 +22,42 @@ function add(){
     var secondNumber=document.getElementById("secondNumbertext").value;
     var addNumber=parseFloat( firstNumber) + parseFloat(  secondNumber);
     document.getElementById("result").innerHTML=addNumber;
-    //alert(secondNumber);
+    //alert(addNumber);
+
+
+
+}
+function min(){
+    //alert("yes teacher it is working");
+    var firstNumber=document.getElementById("firstNumbertext").value;
+    var secondNumber=document.getElementById("secondNumbertext").value;
+    var addNumber=parseFloat( firstNumber) - parseFloat(  secondNumber);
+    document.getElementById("result").innerHTML=addNumber;
+    //alert(addNumber);
+
+
+
+}
+function mul(){
+    //alert("yes teacher it is working");
+    var firstNumber=document.getElementById("firstNumbertext").value;
+    var secondNumber=document.getElementById("secondNumbertext").value;
+    var addNumber=parseFloat( firstNumber) * parseFloat(  secondNumber);
+    document.getElementById("result").innerHTML=addNumber;
+    //alert(addNumber);
+
+
+
+}
+function div(){
+    //alert("yes teacher it is working");
+    var firstNumber=document.getElementById("firstNumbertext").value;
+    var secondNumber=document.getElementById("secondNumbertext").value;
+    var addNumber=parseFloat( firstNumber) / parseFloat(  secondNumber);
+    document.getElementById("result").innerHTML=addNumber;
+    //alert(addNumber);
+
+
 
 }
 
