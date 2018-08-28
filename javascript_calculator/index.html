@@ -53,8 +53,14 @@ function div(){
     //alert("yes teacher it is working");
     var firstNumber=document.getElementById("firstNumbertext").value;
     var secondNumber=document.getElementById("secondNumbertext").value;
+if(parseFloat(  secondNumber)==0){
+    document.getElementById("result").innerHTML="Hey Smarty, you can not divide on Zero.";
+}else{
     var addNumber=parseFloat( firstNumber) / parseFloat(  secondNumber);
     document.getElementById("result").innerHTML=addNumber;
+}
+
+    
     //alert(addNumber);
 
 
