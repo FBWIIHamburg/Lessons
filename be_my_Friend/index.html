@@ -19,22 +19,24 @@
 var age=document.getElementById("ageBox").value;
 if(age<18){
     document.getElementById("result").innerHTML="you can be a freind of my kid";
-}else{
+}
+else{
     if(age<30){
         document.getElementById("result").innerHTML="I like it";
     }
     else{
         if(age<40){
-        document.getElementById("result").innerHTML="No way";
-    }else{
-    if(age<50){
-        document.getElementById("result").innerHTML="go away 50 guy";
-    }
-    
-}
-    }
-}
+            document.getElementById("result").innerHTML="No way";
         }
+        else{
+            if(age<50){
+                document.getElementById("result").innerHTML="go away 50 guy";
+            }
+    
+        }
+    }
+    }
+}
 
         </script>
 </body>
