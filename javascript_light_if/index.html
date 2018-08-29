@@ -10,12 +10,28 @@
 <body>
     <img id="img1" src="images/of.png" alt="off"  />
     <button onclick="lightOn()">On</button>
-    <button>Off</button>
+    <button onclick="lightOff()">Off</button>
+    <button id="onofButton" onclick="lightonof()" >on</button>
     <script>
     function lightOn(){
 document.getElementById("img1").setAttribute("src","images/on.png");
     }
+    function lightOff(){
+document.getElementById("img1").setAttribute("src","images/of.png");
+    }
+
     
+    function lightonof(){
+var imgSrc=document.getElementById("img1").getAttribute("src");
+if(imgSrc == "images/of.png"){
+    document.getElementById("img1").setAttribute("src","images/on.png");
+    document.getElementById("onofButton").innerHTML="Off";
+}
+else{
+    document.getElementById("img1").setAttribute("src","images/of.png");
+    document.getElementById("onofButton").innerHTML="On";
+}
+    }
     </script>
 </body>
 </html>
