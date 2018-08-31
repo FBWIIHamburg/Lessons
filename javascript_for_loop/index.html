@@ -11,9 +11,10 @@
    <div id="result" ></div>
    <script>
        var x="";
-   for(var i = 0 ; i <= 10 ; i++ ){
-    
-       x = x +"<br>"+ i*i;
+   for(var i = 2 ; i <= 100 ; i=i+2 ){
+    if( i % 3 ==0){
+       x =x+"i = "+ i +"<br>";
+}
 
    }
    document.getElementById("result").innerHTML=x;
