@@ -6,14 +6,45 @@
     <title>color Box</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+   
 </head>
 <body>
     <div class="container">
 <div id="colorBox" class="colorbox"></div>
-<input type="number" value="0" id="redInput" />
-<input type="number" value="0" id="greenInput" />
-<input type="number" value="0" id="blueInput" />
+<input type="number" class="input" onchange="changeRed()" value="0" id="redInput" />
+<input type="number" class="input" onchange="changeGreen()" value="0" id="greenInput" />
+<input type="number" class="input" onchange="changeBlue()" value="0" id="blueInput" />
     </div>
+    <script>
+    function changeRed(){
+var redNumber=document.getElementById("redInput").value;
+var greenNumber=document.getElementById("greenInput").value;
+var blueNumber=document.getElementById("blueInput").value;
+document.getElementById("colorBox").
+setAttribute("style","background-color:rgb("+redNumber+","+greenNumber+","+blueNumber+");");
+document.getElementById("redInput").
+setAttribute("style","background-color:rgb("+redNumber+",0,0);");
+    }
+
+function changeGreen(){
+    var redNumber=document.getElementById("redInput").value;
+var greenNumber=document.getElementById("greenInput").value;
+var blueNumber=document.getElementById("blueInput").value;
+document.getElementById("colorBox").
+setAttribute("style","background-color:rgb("+redNumber+","+greenNumber+","+blueNumber+");");
+document.getElementById("greenInput").
+setAttribute("style","background-color:rgb(0,"+greenNumber+",0);");
+}
+
+function changeBlue(){
+    var redNumber=document.getElementById("redInput").value;
+var greenNumber=document.getElementById("greenInput").value;
+var blueNumber=document.getElementById("blueInput").value;
+document.getElementById("colorBox").
+setAttribute("style","background-color:rgb("+redNumber+","+greenNumber+","+blueNumber+");");
+document.getElementById("blueInput").
+setAttribute("style","background-color:rgb(0,0,"+blueNumber+");");
+}
+    </script>
 </body>
 </html>
