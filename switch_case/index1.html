@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <input type="number" id="gradeBox" value="0" min="0" max="100" />
+    <button onclick="checkGrade()">check</button>
+    <script>
+    function checkGrade(){
+        var grade=parseFloat( document.getElementById("gradeBox").value);
+        switch (grade) {
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            alert("Faild");
+                break;
+            case 6:
+                alert("Mideum");
+                break;
+            case 7:
+                alert("good");
+                break;
+            case 8:
+                alert("very good");
+                break;
+            case 9:
+                alert("wonderful");
+                break;
+            
+            default:
+            alert("Excellent");
+                break;
+        }
+    }
+    </script>
+</body>
+</html>
